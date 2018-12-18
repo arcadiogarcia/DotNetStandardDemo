@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PeopleXamarin"
+             xmlns:peoplelibrary="clr-namespace:PeopleLibrary;assembly=PeopleLibrary"
+             x:Class="PeopleXamarin.MainPage">
+    <Grid>
+        <ListView x:Name="PeopleList" RowHeight="140">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="{Binding PictureURI}" WidthRequest="100" HeightRequest="100" Margin="20"/>
+                            <StackLayout Orientation="Vertical">
+                                <Label Text="{Binding FirstName}" FontAttributes="Bold" TextColor="Black" FontSize="50"/>
+                                <Label Text="{Binding LastName}" FontSize="25"/>
+                            </StackLayout>  
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Text="Add" HorizontalOptions="End" VerticalOptions="End" Margin="20" Clicked="Button_Clicked"/>
+    </Grid>
+</ContentPage>

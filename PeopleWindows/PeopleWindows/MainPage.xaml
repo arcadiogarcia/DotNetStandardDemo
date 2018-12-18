@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="PeopleWindows.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PeopleWindows"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:peoplelibrary="using:PeopleLibrary"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <ListView x:Name="PeopleList" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="peoplelibrary:Person">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="{x:Bind PictureURI}" Width="200" Height="200" Margin="20"/>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Text="{x:Bind FirstName}" FontWeight="Bold" FontSize="100"/>
+                            <TextBlock Text="{x:Bind LastName}" FontSize="50"/>
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Content="Add" Click="Button_Click" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="20"/>
+    </Grid>
+</Page>

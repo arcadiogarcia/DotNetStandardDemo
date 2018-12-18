@@ -1,0 +1,16 @@
+.vs
+PeopleCMD/bin
+PeopleCMD/obj
+PeopleLibrary/bin
+PeopleLibrary/obj
+PeopleWindows/PeopleWindows/bin
+PeopleWindows/PeopleWindows/obj
+PeopleXamarin/PeopleXamarin/PeopleXamarin/netstandard2.0
+PeopleXamarin/PeopleXamarin/PeopleXamarin/bin
+PeopleXamarin/PeopleXamarin/PeopleXamarin/obj
+PeopleXamarin/PeopleXamarin/PeopleXamarin.Android/bin
+PeopleXamarin/PeopleXamarin/PeopleXamarin.Android/obj
+PeopleXamarin/PeopleXamarin/PeopleXamarin.UWP/bin
+PeopleXamarin/PeopleXamarin/PeopleXamarin.UWP/obj
+PeopleXamarin/PeopleXamarin/PeopleXamarin.iOS/bin
+PeopleXamarin/PeopleXamarin/PeopleXamarin.iOS/obj
